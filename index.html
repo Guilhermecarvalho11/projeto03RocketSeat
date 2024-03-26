@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+      <div id="header">
+        <div class="title">
+          <h1 >Crie e compartilhe seu evento.</h1>
+            <p>
+              O primeiro passo, é preencher esse
+              formulário de inscrição.
+            </p>
+        </div>
+      </div>
+      <div id="content-form">
+        <form>
+          <div class="form-container">
+            <div class="event">
+              <h2>informações do Evento</h2>
+              <label for="title-event">Titulo do Evento <span>(minimo 8 caracteres)</span></label>
+              <input id="title-event" required minlength="8"/>
+              <label for="link-event">Link do Evento <span>(comece com https://)</span></label>
+              <input id="link-event" type="url">
+              <label for="wpp">Whatsapp para contato<span>(somente numero)</span></label>
+              <input type="number" id="wpp">
+              <label for="info">informações extras</label>
+              <textarea id="info"></textarea>
+              <label for="category">Categoria</label>
+              <select id="category">
+                <option>Ao vivo</option>
+                <option>Mentoria</option>
+                <option>PodCast</option>
+              </select>
+            </div>
+            <div class="privacidade">
+              <h2>Privacidade</h2>
+              <label for="e-mail">E-mail do administrador <span>(digite um e-mail válido)</span></label>
+              <input id="e-mail" required />
+              <label for="checkbox">Senha de acesso para os participantes <span>(minimo 8 caracteres)</span></label>
+              <input type="password" name="" id="">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="checkbox"/>
+                <label for="checkbox">Evento privado</label></input>
+              </div>
+            </div>
+            <div class="date-clock">
+              <h2>Dia e Hora</h2>
+              <div class="col-3">
+                <div class="input-wrpper">
+                  <label for="date">Data</label>
+                  <input type="date" id="date">
+                </div>
+
+                <div class="input-wrpper">
+                  <label for="start-time">Das</label>
+                  <input type="time" id="start-time">
+                </div>
+
+                <div class="input-wrpper">
+                  <label for="end-time">Até</label>
+                  <input type="time" id="end-time">
+                </div>
+              </div>
+            </div>
+        </form>
+      </div>
+      <footer>
+        <input type="submit" value="Salvar Evento" class="button"/>
+    </footer>
+  </main>
+  
+</body>
+</html>
