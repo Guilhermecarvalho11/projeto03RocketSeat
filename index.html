@@ -18,16 +18,16 @@
         </div>
       </div>
       <div id="content-form">
-        <form>
+        <form id="my-form">
           <div class="form-container">
             <div class="event">
               <h2>informações do Evento</h2>
               <label for="title-event">Titulo do Evento <span>(minimo 8 caracteres)</span></label>
               <input id="title-event" required minlength="8"/>
               <label for="link-event">Link do Evento <span>(comece com https://)</span></label>
-              <input id="link-event" type="url">
+              <input id="link-event" required type="url">
               <label for="wpp">Whatsapp para contato<span>(somente numero)</span></label>
-              <input type="number" id="wpp">
+              <input type="number" required id="wpp">
               <label for="info">informações extras</label>
               <textarea id="info"></textarea>
               <label for="category">Categoria</label>
@@ -69,7 +69,11 @@
         </form>
       </div>
       <footer>
-        <input type="submit" value="Salvar Evento" class="button"/>
+        <input type="submit"
+         value="Salvar Evento" 
+         class="button"
+         form="my-form"
+         />
     </footer>
   </main>
   
